@@ -21,7 +21,8 @@ body{
 /*When the magic happens*/
 
 .magic{
-    background-color: yellow;
+    background-color: yellow;  
+    border: 0;
     letter-spacing: 10px;
     position: fixed;
     z-index: 100;
@@ -43,3 +44,51 @@ body{
 
 /*The boxes*/
 
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 400px;
+    height:400px;
+    position: relative;
+    transition: 04s ease;
+}
+
+.boxes.big{
+    width: 500px;
+    height: 500px;
+}
+.boxes.big .box{
+    transform: rotateZ(360deg);
+}
+.box{
+    background-image: url(/204.gif);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transition: 0.4s ease;
+}
+.box::after{
+    content: '';
+    background-color: #f6e58d;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before{
+    content:'';
+    background-color: #f9ca24;
+    position: absolute;
+    bottom: -15;
+    left: 8px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+
+}
