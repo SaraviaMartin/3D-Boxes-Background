@@ -62,7 +62,7 @@ body{
     transform: rotateZ(360deg);
 }
 .box{
-    background-image: url(/204.gif);
+    background-image: url(204.gif);
     background-repeat: no-repeat;
     background-size: 400px 400px;
     position: relative;
