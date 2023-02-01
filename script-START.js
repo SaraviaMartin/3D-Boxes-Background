@@ -1,17 +1,16 @@
 /*Primero tenemos que llamar los elementos que vamos a manipular*/
 const boxesContainer = document.getElementById('boxes')
-const button = document.getAnimations('button')
+const button = document.getElementById('button')
 
 /*Alternamos la clase del boxesContainer con classlist.toggle */
-button.addEventListener('click', ()=> boxesContainer.classList.toggle('big'))
-
+button.addEventListener('click', () => boxesContainer.classList.toggle('big'))
 /*Creamos la logica de las cajas */
-function createBoxes(){
+function createBoxes() {
     for(let i = 0; i < 4 ; i++){
-        for(let j =0; j < 4; j++){
+        for(let j = 0; j < 4; j++){
             const box = document.createElement('div')
-            box.classList('box')
-            box.style.backgroundPosition = `${-i * 150}px ${-j * 150}px`
+            box.classList.add('box')
+            box.style.backgroundPosition = `${-j * 150}px ${-i * 150}px`
             boxesContainer.appendChild(box)
         }
     }
