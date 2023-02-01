@@ -39,7 +39,7 @@ body{
 
 .magic:active{
     box-shadow: none;
-    transform: translateY();
+    transform: translateY(2px);
 }
 
 /*The boxes*/
@@ -62,12 +62,12 @@ body{
     transform: rotateZ(360deg);
 }
 .box{
-    background-image: url(204.gif);
+    background-image: url('204.gif');
     background-repeat: no-repeat;
     background-size: 500px 500px;
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     transition: 0.4s ease;
 }
 .box::after{
@@ -82,10 +82,10 @@ body{
 }
 
 .box::before{
-    content:'';
+    content: '';
     background-color: #f9ca24;
     position: absolute;
-    bottom: -15;
+    bottom: -15px;
     left: 8px;
     height: 15px;
     width: 100%;

@@ -10,7 +10,7 @@ function createBoxes() {
         for(let j = 0; j < 4; j++){
             const box = document.createElement('div')
             box.classList.add('box')
-            box.style.backgroundPosition = `${-j * 150}px ${-i * 150}px`
+            box.style.backgroundPosition = `${-j * 125}px ${-i * 125}px`
             boxesContainer.appendChild(box)
         }
     }
