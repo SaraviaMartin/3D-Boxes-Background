@@ -48,15 +48,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 400px;
-    height:400px;
+    width: 500px;
+    height:500px;
     position: relative;
     transition: 04s ease;
 }
 
 .boxes.big{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 .boxes.big .box{
     transform: rotateZ(360deg);
@@ -64,7 +64,7 @@ body{
 .box{
     background-image: url(204.gif);
     background-repeat: no-repeat;
-    background-size: 400px 400px;
+    background-size: 500px 500px;
     position: relative;
     height: 150px;
     width: 150px;
